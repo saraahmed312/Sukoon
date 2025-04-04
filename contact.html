@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Sukoon</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Sukoon</div>
+            <div class="tagline">Emotional Support Duaas. Find comfort through Islamic supplications</div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link" id="home-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link" id="about-link">About Us</a></li>
+                    <li><a href="duaa.html" class="nav-link" id="duaas-link">Find Duaas</a></li>
+                    <li><a href="contact.html" class="nav-link" id="contact-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="container">
+        <main class="main-content">
+            <section class="card">
+                <h2>Get in Touch</h2>
+                <p>Have questions, suggestions, or feedback? We'd love to hear from you! Fill out the form below and we'll get back to you as soon as possible.</p>
+                
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" required>
+                            <option value="" disabled selected>Select a subject</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="suggestion">Suggestion</option>
+                            <option value="question">Question</option>
+                            <option value="technical">Technical Issue</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Send Message</button>
+                    
+                    <div id="successMessage" class="success-message">
+                        Thank you for your message! We'll get back to you soon.
+                    </div>
+                </form>
+            </section>
+            
+            <section class="card">
+                <h2>Other Ways to Reach Us</h2>
+                <div class="contact-info">
+                    <div class="contact-method">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h3>Email Us</h3>
+                            <p><a href="mailto:infoSukoon@gmail.com">infoSukoon@gmail.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-details">
+                            <h3>Social Media</h3>
+                            <p>
+                                <a href="#" target="_blank">Twitter</a> | 
+                                <a href="#" target="_blank">Instagram</a> | 
+                                <a href="#" target="_blank">Facebook</a>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">🏢</div>
+                        <div class="contact-details">
+                            <h3>Mailing Address</h3>
+                            <p>123 placehodler<br>placeholder, placeholder</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>© 2023 Sukoon | All Rights Reserved</p>
+        </div>
+    </footer>
+    
+    <script src="contact.js"></script>
+</body>
+</html>

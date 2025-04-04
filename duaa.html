@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Duaas - Sukoon</title>
+    <link rel="stylesheet" href="duaa.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Sukoon</div>
+            <div class="tagline">Emotional Support Duaas. Find comfort through Islamic supplications</div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link" id="home-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link" id="about-link">About Us</a></li>
+                    <li><a href="duaa.html" class="nav-link" id="duaas-link">Find Duaas</a></li>
+                    <li><a href="contact.html" class="nav-link" id="contact-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="container">
+        <main class="main-content">
+            <section class="card">
+                <h2>Find Relevant Duaas</h2>
+                <div class="search-container">
+                    <p>Describe how you're feeling or what you need help with in your own words. Our system will match your emotions with appropriate Islamic supplications.</p>
+                    
+                    <div class="search-box">
+                        <input type="text" class="search-input" id="emotionInput" placeholder="e.g. I feel anxious about my future...">
+                        <button class="search-btn" id="searchBtn">Find Duaas</button>
+                    </div>
+                    
+                    <p class="example-text">Examples: "I'm stressed about work", "Feeling lonely after moving", "Need patience during difficult times"</p>
+                </div>
+                
+                <div class="loading" id="loadingIndicator">
+                    <div class="loading-spinner"></div>
+                    <p>Searching for relevant duaas...</p>
+                </div>
+                
+                <div class="results-container" id="resultsContainer">
+                    <div class="no-results">
+                        <p>Enter how you're feeling to find relevant duaas.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>© 2023 Sukoon | <a href="about.html" style="color: var(--primary-color);">About Us</a></p>
+        </div>
+    </footer>
+    
+    <script src="duaa.js"></script>
+</body>
+</html>
