@@ -6,7 +6,7 @@ const duaasDatabase = [
         translation: "O Allah, I seek refuge in You from grief and sadness, from weakness and laziness, from miserliness and cowardice, from being overcome by debt and overpowered by men.",
         transliteration: "Allahumma inni a'udhu bika minal-hammi wal-hazan, wa a'udhu bika minal-'ajzi wal-kasal, wa a'udhu bika minal-jubni wal-bukhl, wa a'udhu bika min ghalabatid-dayni wa qahrir-rijal",
         reference: "Sunan Abu Dawood 1555",
-        keywords: ["anxiety", "stress", "worry", "sadness", "depression", "overwhelmed"]
+        keywords: ["anxiety","anxious", "stress","stressed", "worry","worried","sadness","sad", "depression" ,"depressed", "overwhelmed"]
     },
     {
         id: 2,
@@ -14,7 +14,7 @@ const duaasDatabase = [
         translation: "Allah is sufficient for me. There is no deity except Him. I have placed my trust in Him, and He is the Lord of the Great Throne.",
         transliteration: "Hasbiyallahu la ilaha illa huwa, 'alayhi tawakkaltu, wa huwa rabbul-'arshil-'azim",
         reference: "Quran 9:129",
-        keywords: ["trust", "reliance", "difficulty", "support", "help", "protection"]
+        keywords: ["trust", "reliance", "difficulty", "support", "help","helpless", "protection"]
     },
     {
         id: 3,
@@ -158,4 +158,22 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
+
+});
+
+// Added: Emotion input validation for maximum character length (100 characters)
+document.addEventListener('DOMContentLoaded', function() {
+    const emotionInput = document.getElementById('emotionInput');  // Get emotion input field
+    const errorMessage = document.getElementById('emotion-error');  // Get error message element
+
+    emotionInput.addEventListener('input', function() {
+        const emotion = emotionInput.value;
+
+        // Check if the input exceeds the 80 character limit
+        if (emotion.length > 80) {
+            errorMessage.textContent = 'Emotion text is too long! Maximum 80 characters.';
+        } else {
+            errorMessage.textContent = ''; // Clear the error message if the input is valid
+        }
+    });
 });
