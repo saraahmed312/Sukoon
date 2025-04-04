@@ -28,14 +28,14 @@
                 <h2>Find Relevant Duaas</h2>
                 <div class="search-container">
                     <p>Describe how you're feeling or what you need help with in your own words. Our system will match your emotions with appropriate Islamic supplications.</p>
-                    
                     <div class="search-box">
                         <input type="text" class="search-input" id="emotionInput" placeholder="e.g. I feel anxious about my future...">
+                        <span id="emotion-error" style="color: red;"></span>  <!-- Error message will show here -->
                         <button class="search-btn" id="searchBtn">Find Duaas</button>
                     </div>
-                    
                     <p class="example-text">Examples: "I'm stressed about work", "Feeling lonely after moving", "Need patience during difficult times"</p>
                 </div>
+                
                 
                 <div class="loading" id="loadingIndicator">
                     <div class="loading-spinner"></div>
